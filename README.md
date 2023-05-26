@@ -36,5 +36,10 @@ Tengo la secciones:
  
  
  
+ 26-5-2023:
+   https://gui24xr.github.io/-Desarrollo-Web-PreEntrega2-GuillermoGuardia/   
+   ese es el link de la web funcionando con menu hamburguesa... por algun motivo hoy github me la acepto asique lo dejo ahi para chequear. Un abrazo.
+ 
+ 
  
  
