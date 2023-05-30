@@ -160,7 +160,7 @@
     display: flex;
     width: 180px;
     height: 0.01px;
-    margin: 340px 0px 0px 95.5%;
+    margin: 340px 0px 0px 96%;
     background-color: transparent;
 }
 
@@ -199,8 +199,6 @@
     background-color: transparent;
 }
 
-
-
 /* **************************************************************************************************/
 /* 3- MAIN** SITIO  *********************************************************************************/
 /* **************************************************************************************************/
@@ -209,9 +207,6 @@ main{
 margin-top:70px; /* Esto se uso para compensar el NO ESPACIO de la barra de navegacion superior x culpa del position fixed */
 
 }
-
-
-
 
 /* 3.1- INDEX ***************************************************************************************/
 
@@ -770,136 +765,120 @@ margin-top:70px; /* Esto se uso para compensar el NO ESPACIO de la barra de nave
 
 .seccion_tour_container {
 
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(12,1fr);
+    display: flex;
     width: 92%;
     height: 600px;
     margin: 70px 0px 30px 50px;
     overflow: hidden;   
-    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1),
     inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
     inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
     0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
 
     background-image: url("../imagenes/img_portada_tour.jpg");
-    background-size: 80%;
+    background-size: 90%;
     background-position:right;
     background-repeat: no-repeat;
     background-position-x: 350px;
-    background-position-y: -50px;
+    background-position-y: -150px;
 }
 
 
-
-.box_fechas{
-
-    grid-column-start: 2;
-    grid-row-start: 3;
-    width: 370px;
-    height: 540px;
-    margin: 10px 0px 10px 0px;
-    padding: 0 0 150px 0px;
-
-    background-color: rgba(255, 231, 18, 0.35);
-    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+.contenedor_tour_table{
+    
+    width:fit-content;
+    height: 450px;
+    margin: 80px 0 0 780px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color:transparent;
+    /*box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
     inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
     inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
-    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);*/
 }
 
 
 
-.box_fechas ul{
+.tour_table{
 
-    background-color: transparent;
-}
-
-.box_fechas ul li{
-
-    background-color: transparent;
-    list-style-type: none;
-    padding: 0 0 0 0;
+    width: 100px;
+    background-color:transparent;
+    margin: 30px 30px 30px 30px;
     
-}
-
-.box_fechas ul h2{
-
-    margin: 0px 0px 30px 0px;
-    background-color: transparent;
-    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
-    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
-    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
-    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
-    
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     font-size: 16px;
-    color: #FFFFFF;
-}
-
-.fecha_container_tour{
-
-    display: flex;
-    align-items: center;
-    justify-content:stretch;
-    background-color: transparent;
-    padding-left: 0;
-}
-.fecha_container_tour div{
-
-    background-color: transparent;
-    margin: 10px 10px 10px 10px;
-}
-
-
-
-.flag_datos_concierto{
-
-    background-color: transparent;
-    width: 40px;
-    height: 40px;
-    margin: 0 10px  10px;
-}
-
-
-
-.datos_conciertos{
-
-    display: flex;
-    flex-direction: column;
-    padding: 20px 40px 0 20px;
-    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
-    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
-    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
-    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
-}
-
-
-
-.datos_conciertos p{
-
-    margin: 10px 0 0 0;
-    background-color: transparent;
-    font-family: familia_roboto;
-    color: #f8f7f7;
-    font-size: 18px;
-}
-
-
-
-.datos_conciertos a{
-
-    margin: 30px 0 30px 140px;
-    padding: 0 30px 0 30px;
-    background-color:red;
-    border-radius: 25px;
+    color:#FFFFFF;
+    border-collapse: collapse;
     
-    font-family: familia_1;
-    color: #f8f7f7;
-    font-size: 14px;
-    text-decoration:none;
+    
 }
 
+.tour_table tr{
+    background-color:transparent;
+    
+    
+}
+
+.tour_table tr th{
+    background-color:transparent;
+ 
+}
+
+.tour_table tr td{
+    background-color:transparent;
+
+}
+
+.tour_table_row{
+
+    background-color: transparent;
+}
+
+.tour_table_row th{
+
+    background-color: #000000;
+    
+
+}
+
+.tour_table_flag{
+
+    
+    scale: 50%;
+    padding: 0 0 0 0;
+    background-color: #000000;
+    margin-left: 30px;
+   
+}
+
+.tour_table_fecha{
+ 
+
+ padding: 0 30px 0 30px;
+ background-color: transparent;
+ font-weight: bolder;
+ 
+ background-color:rgb(5, 71, 5);
+ 
+}
+
+
+
+
+.tour_table_lugar{
+
+    padding: 0 30px 0 30px;
+
+}
+
+.tour_table_ciudad{
+
+    padding: 0 30px 0 30px;
+
+    background-color:rgb(5, 71, 5);
+   
+
+}
 
 
 /* 3.6- MUSICA   ****************************************************************************************************/
@@ -910,32 +889,36 @@ margin-top:70px; /* Esto se uso para compensar el NO ESPACIO de la barra de nave
 
 .galeria_imagenes_container{
 
-    overflow-y: scroll;
-    overflow-x: hidden;
-
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    grid-auto-rows: minmax(100px, auto);
-    gap: 15px;
-
     width: 92%;
     height: 600px; /* Usare esta medida en todas las alturas para que la pagina sea tipo diaspostiva y queden fijos footer y header*/
- 
-   
-
     margin: 70px 0px 30px 50px;
-
-
-    
+    padding: 10px 0px 0 0px;
+    overflow-y: hidden;
+    overflow-x: scroll;
     box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
     inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
     inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
     0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-auto-rows: minmax(600px, auto);
+    gap: 15px;
 }
+
 
 .grid-item:hover {
     filter: opacity(0.9);
     transform: scale(1.04);
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+
+    border-radius: 0px 0px 139px 0px;
+    -moz-border-radius: 0px 0px 139px 0px;
+    -webkit-border-radius: 0px 0px 139px 0px;
+    border: 0px solid #000000;
   }
 
   .grid-item {
@@ -957,6 +940,9 @@ margin-top:70px; /* Esto se uso para compensar el NO ESPACIO de la barra de nave
 .biografia_container{
 
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    
     width: 92%;
     height: 600px;
     margin: 70px 0px 30px 50px;
@@ -967,7 +953,7 @@ margin-top:70px; /* Esto se uso para compensar el NO ESPACIO de la barra de nave
     0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
 
     background-image: url("../imagenes/img_portada_bio.jpg");
-    background-size:80%;
+    background-size:85%;
     background-repeat: no-repeat;
     background-position-x: 400px; 
 }
@@ -976,12 +962,14 @@ margin-top:70px; /* Esto se uso para compensar el NO ESPACIO de la barra de nave
 
 .contenedor_txt{
 
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 6;
-    grid-row-end: 13;
-   padding: 40px;
-    margin: 0 50px 0 -50px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    overflow-y:hidden;
+    margin: 50px 0px 0 100px;
+    padding: 30px 30px 30px 30px;
     background-color: rgba(5, 90, 55, 0.85); /* Color de fondo + transparencia de la division con rgba */
     box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
     inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
@@ -993,6 +981,7 @@ margin-top:70px; /* Esto se uso para compensar el NO ESPACIO de la barra de nave
 
 .contenedor_txt h1{
 
+    margin: 0 0 010px;
     background-color: transparent;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(255, 255, 255);
@@ -1057,17 +1046,9 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 
 
-
-
-
-
-
-/*---------------GALERIA RESPONSIVE CON GREEDS ----------------------------------------------------------------------------------*/
-
-
   
-/*--------------------------------------------------------------------------------------------------------------------------------------
-*-------------- SITIO 1080px x 2400 ----------------------------------------------------------------------------------------
+/*-------------------------------------------------------------------------------------------------------------------------------------*
+*-------------- SITIO 1080px x 2400 ---------------------------------------------------------------------------------------------------*
 *-------------------------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -1192,10 +1173,8 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         
     }
     
-
-
-
 }
+
 /*--------------------------------------------------------------------------------------------------------------------------------------
 *-------------- SITIO RESPONSIVE PRIMER QUIEBRE ----------------------------------------------------------------------------------------
 *-------------------------------------------------------------------------------------------------------------------------------------*/
